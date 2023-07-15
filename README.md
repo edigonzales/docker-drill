@@ -40,7 +40,9 @@ SELECT * FROM cp.`employee.json` LIMIT 3;
 
 
 ```
-SELECT * FROM s3.`ch.so.afu.abfallmengen_gemeinden/ch.so.afu.abfallmengen_gemeinden.parquet`
+SELECT * FROM s3.`ch.so.afu.abfallmengen_gemeinden/ch.so.afu.abfallmengen_gemeinden.parquet`;
+SELECT * FROM s3.`ch.so.afu.abfallmengen_gemeinden.parquet`;
+SELECT max(abfall_kg_pro_einwohner), jahr FROM s3.`ch.so.afu.abfallmengen_gemeinden.parquet` group by jahr order by jahr;
 ```
 
 

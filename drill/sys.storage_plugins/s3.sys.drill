@@ -1,0 +1,24 @@
+{
+  "type" : "file",
+  "connection" : "s3a://ch.so.data-dev",
+  "config" : {
+    "fs.s3a.endpoint" : "s3.eu-central-1.amazonaws.com",
+    "fs.s3a.impl.disable.cache" : "false",
+    "fs.s3a.aws.credentials.provider" : "org.apache.hadoop.fs.s3a.AnonymousAWSCredentialsProvider"
+  },
+  "workspaces" : {
+    "root" : {
+      "location" : "/",
+      "writable" : false,
+      "defaultInputFormat" : "parquet",
+      "allowAccessOutsideWorkspace" : false
+    }
+  },
+  "formats" : {
+    "parquet" : {
+      "type" : "parquet"
+    }
+  },
+  "authMode" : "SHARED_USER",
+  "enabled" : true
+}

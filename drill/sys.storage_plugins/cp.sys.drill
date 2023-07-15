@@ -1,0 +1,17 @@
+{
+  "type" : "file",
+  "connection" : "classpath:///",
+  "formats" : {
+    "csv" : {
+      "type" : "text",
+      "extensions" : [ "csv" ],
+      "lineDelimiter" : "\n",
+      "fieldDelimiter" : ",",
+      "quote" : "\"",
+      "escape" : "\"",
+      "comment" : "#"
+    }
+  },
+  "authMode" : "SHARED_USER",
+  "enabled" : true
+}

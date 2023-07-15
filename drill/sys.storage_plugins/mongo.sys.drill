@@ -1,0 +1,14 @@
+{
+  "type" : "mongo",
+  "connection" : "mongodb://localhost:27017/",
+  "pluginOptimizations" : {
+    "supportsProjectPushdown" : true,
+    "supportsFilterPushdown" : true,
+    "supportsAggregatePushdown" : true,
+    "supportsSortPushdown" : true,
+    "supportsUnionPushdown" : true,
+    "supportsLimitPushdown" : true
+  },
+  "batchSize" : 100,
+  "authMode" : "SHARED_USER"
+}

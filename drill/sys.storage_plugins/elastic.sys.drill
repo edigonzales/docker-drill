@@ -1,0 +1,4 @@
+{
+  "type" : "elastic",
+  "authMode" : "SHARED_USER"
+}
